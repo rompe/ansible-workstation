@@ -1,0 +1,30 @@
+---
+- name: Install eclipse
+  package: name={{ item }}
+  with_items:
+    - eclipse-platform
+    - eclipse-cdt
+    - eclipse-jdt
+    - eclipse-mpc
+    - eclipse-pde
+    - eclipse-dltk
+    - eclipse-egit
+    - eclipse-mylyn
+    - eclipse-pydev
+    - eclipse-dltk-sh
+    - eclipse-anyedit
+    - eclipse-moreunit
+    - eclipse-subclipse
+    - eclipse-egit-mylyn
+    - eclipse-linuxtools
+    - eclipse-packagekit
+    - eclipse-egit-github
+    - eclipse-pydev-mylyn
+    - eclipse-color-theme
+    - eclipse-mylyn-builds-hudson
+    - eclipse-mylyn-tasks-bugzilla
+    - eclipse-webtools-sourceediting
+    - eclipse-mylyn-versions-subclipse
+    # Still missing: YEdit
+  tags:
+    - eclipse
