@@ -22,9 +22,10 @@ Some packages can't be installed using ansible.
 
 #### Eclipse
 Just drag & drop the *Install* buttons of these projects onto a running eclipse:
-- [Mylyn GitLab Connector](https://marketplace.eclipse.org/content/mylyn-gitlab-connector)
-- [LiClipse Text](https://marketplace.eclipse.org/content/liclipsetext)
-- [YEdit](https://marketplace.eclipse.org/content/yedit)
+
+* [Mylyn GitLab Connector](https://marketplace.eclipse.org/content/mylyn-gitlab-connector)
+* [LiClipse Text](https://marketplace.eclipse.org/content/liclipsetext)
+* [YEdit](https://marketplace.eclipse.org/content/yedit)
 
 ## Disclaimer
 
