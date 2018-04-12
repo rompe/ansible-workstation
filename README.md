@@ -21,11 +21,31 @@ empty or features a `localhost` line.
 Some packages can't be installed using ansible.
 
 #### Eclipse
+Since the Eclipse packages that come with Fedora tend to break in various ways with every new
+release, I am switching to installing Eclipse manually using the
+[Eclipse installer](https://www.eclipse.org/downloads/download.php?file=/oomph/epp/oxygen/R2/eclipse-inst-linux64.tar.gz)
+and selecting the *Eclipse Committers* package.
+
 Just drag & drop the *Install* buttons of these projects onto a running eclipse:
 
+* [PyDev](https://marketplace.eclipse.org/content/pydev-python-ide-eclipse)
 * [Mylyn GitLab Connector](https://marketplace.eclipse.org/content/mylyn-gitlab-connector)
 * [LiClipse Text](https://marketplace.eclipse.org/content/liclipsetext)
 * [YEdit](https://marketplace.eclipse.org/content/yedit)
+* [TM Terminal](https://marketplace.eclipse.org/content/tm-terminal)
+* [EasyShell](https://marketplace.eclipse.org/content/easyshell)
+* [AnyEdit Tools](https://marketplace.eclipse.org/content/anyedit-tools)
+* [MoreUnit](https://marketplace.eclipse.org/content/moreunit)
+
+For the EGit Mylyn Connector (which should be
+[here](http://marketplace.eclipse.org/content/github-mylyn-connector) bit isn't at the moment),
+add these Update Sites:
+
+* http://download.eclipse.org/egit/updates
+* http://download.eclipse.org/egit/github/updates
+
+Maybe the marketplace page is gone because the project is getting integrated to the main bundle?
+Check that.
 
 ## Disclaimer
 
