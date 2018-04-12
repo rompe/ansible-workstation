@@ -1,36 +1,10 @@
 ---
 - name: Install eclipse
-  package: name={{ item }}
-  with_items:
-    - eclipse-anyedit
-    - eclipse-cdt
-    - eclipse-color-theme
-    - eclipse-dltk
-    - eclipse-dltk-mylyn
-    - eclipse-dltk-sh
-    - eclipse-egit
-    - eclipse-egit-github
-    - eclipse-egit-mylyn
-    - eclipse-jdt
-    - eclipse-linuxtools
-    - eclipse-moreunit
-    - eclipse-mpc
-    - eclipse-mylyn
-    - eclipse-mylyn-builds-hudson
-    - eclipse-mylyn-docs-wikitext
-    - eclipse-mylyn-tasks-bugzilla
-    - eclipse-mylyn-versions-git
-    - eclipse-mylyn-versions-subclipse
-    - eclipse-packagekit
-    - eclipse-pde
-    - eclipse-platform
-    - eclipse-pydev
-    - eclipse-pydev-mylyn
-    - eclipse-recommenders
-    - eclipse-subclipse
-    - eclipse-tm-terminal
-    - eclipse-tm-terminal-connectors
-    - eclipse-webtools-sourceediting
+  unarchive:
+    src: 'https://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/oxygen/3a/eclipse-committers-oxygen-3a-linux-gtk-x86_64.tar.gz&r=1'
+    # This will create ~/eclipse/eclipse, containing an eclipse executable.
+    dest: '{{ ansible_user_dir }}/eclipse/'
+    creates: '{{ ansible_user_dir }}/eclipse/eclipse/eclipse'
     # Still missing: YEdit
     # Also missing: Mylyn GitLab connector
     # Maybe also missing: XML editors and tools / WST?  Gitflow support?  JavaScript development tools?

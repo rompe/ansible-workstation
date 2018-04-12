@@ -3,3 +3,8 @@
   become: true
   roles:
     - keepassxc
+
+- hosts: localhost
+  become: false
+  roles:
+    - eclipse
