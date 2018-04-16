@@ -6,8 +6,12 @@
     # This will create ~/eclipse/eclipse, containing an eclipse executable.
     dest: '{{ ansible_user_dir }}/eclipse/'
     creates: '{{ ansible_user_dir }}/eclipse/eclipse/eclipse'
-    # Still missing: YEdit
-    # Also missing: Mylyn GitLab connector
-    # Maybe also missing: XML editors and tools / WST?  Gitflow support?  JavaScript development tools?
+  tags:
+    - eclipse
+
+- name: Add eclipse.desktop file
+  template:
+    src: eclipse-local.desktop.j2
+    dest: "{{ ansible_user_dir }}/.local/share/applications/eclipse-local.desktop"
   tags:
     - eclipse
