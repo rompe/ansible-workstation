@@ -47,6 +47,10 @@ add these Update Sites:
 Maybe the marketplace page is gone because the project is getting integrated to the main bundle?
 Check that.
 
+For the Mylyn Web Templates connector the incubator has to be added to the update sites:
+
+* http://download.eclipse.org/mylyn/incubator/latest/
+
 ## Disclaimer
 
 If you aren't me, you probably don't want to use this.
