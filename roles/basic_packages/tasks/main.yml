@@ -1,7 +1,7 @@
 ---
-- name: Install keepassxc
+- name: Install basic packages
   package:
-    name: keepassxc
+    name: {{ item }}
     state: present
   with_items:
     - python2-libselinux
