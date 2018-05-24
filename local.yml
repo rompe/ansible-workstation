@@ -2,7 +2,7 @@
 - hosts: localhost
   become: true
   roles:
-    - keepassxc
+    - basic_packages
 
 - hosts: localhost
   become: false
