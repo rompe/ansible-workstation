@@ -2,7 +2,7 @@
 - name: Create ~/eclipse
   file:
     path: '{{ ansible_user_dir }}/eclipse/'
-    type: directory
+    state: directory
 
 - name: Install eclipse
   unarchive:
