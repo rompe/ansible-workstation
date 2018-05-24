@@ -3,3 +3,6 @@
   package:
     name: keepassxc
     state: present
+  with_items:
+    - python2-libselinux
+    - keepassxc
