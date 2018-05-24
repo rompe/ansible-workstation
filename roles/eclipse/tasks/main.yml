@@ -1,4 +1,14 @@
 ---
+- name: Install SElinux python bindings
+  package:
+    name: python2-libselinux
+    state: present
+
+- name: Create ~/eclipse
+  file:
+    path: '{{ ansible_user_dir }}/eclipse/'
+    type: directory
+
 - name: Install eclipse
   unarchive:
     remote_src: yes
