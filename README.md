@@ -36,6 +36,7 @@ Just drag & drop the *Install* buttons of these projects onto a running eclipse:
 * [EasyShell](https://marketplace.eclipse.org/content/easyshell)
 * [AnyEdit Tools](https://marketplace.eclipse.org/content/anyedit-tools)
 * [MoreUnit](https://marketplace.eclipse.org/content/moreunit)
+* [Eclipse Docker Tooling](https://marketplace.eclipse.org/content/eclipse-docker-tooling)
 
 For the EGit Mylyn Connector (which should be
 [here](http://marketplace.eclipse.org/content/github-mylyn-connector) bit isn't at the moment),
