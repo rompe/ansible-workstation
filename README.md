@@ -23,7 +23,7 @@ Some packages can't be installed using ansible.
 #### Eclipse
 Since the Eclipse packages that come with Fedora tend to break in various ways with every new
 release, I am switching to installing Eclipse manually using the
-[Eclipse installer](https://www.eclipse.org/downloads/download.php?file=/oomph/epp/oxygen/R2/eclipse-inst-linux64.tar.gz)
+[Eclipse installer](https://www.eclipse.org/downloads/packages/installer)
 and selecting the *Eclipse Committers* package.
 
 Just drag & drop the *Install* buttons of these projects onto a running eclipse:
@@ -39,7 +39,7 @@ Just drag & drop the *Install* buttons of these projects onto a running eclipse:
 * [Eclipse Docker Tooling](https://marketplace.eclipse.org/content/eclipse-docker-tooling)
 
 For the EGit Mylyn Connector (which should be
-[here](http://marketplace.eclipse.org/content/github-mylyn-connector) bit isn't at the moment),
+[here](http://marketplace.eclipse.org/content/github-mylyn-connector) but isn't at the moment),
 add these Update Sites:
 
 * http://download.eclipse.org/egit/updates
