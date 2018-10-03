@@ -52,6 +52,19 @@ For the Mylyn Web Templates connector the incubator has to be added to the updat
 
 * http://download.eclipse.org/mylyn/incubator/latest/
 
+##### Mylyn GitLab Connector
+
+The connector is outdated since Gitlab dropped API v3 nearly a year ago. 
+See here: https://github.com/pweingardt/mylyn-gitlab/issues/47
+
+Since there is no upstream progress, I built
+[this updated fork](https://github.com/scriptninja/mylyn-gitlab) 
+myself and published the result as an update site:
+
+https://eclipse.rompe.org/mylyn-gitlab
+
+Just add this site to Eclipse and install the connector.
+
 ## Disclaimer
 
 If you aren't me, you probably don't want to use this.
