@@ -3,6 +3,7 @@
   become: true
   roles:
     - basic_packages
+    - inotify_max_user_watches
 
 - hosts: localhost
   become: false

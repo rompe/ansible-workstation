@@ -1,0 +1,9 @@
+---
+# tasks file for inotify_max_user_watches
+
+- name: "Permanently set fs.inotify.max_user_watches to {{ fs_inotify_max_user_watches }}"
+  sysctl:
+    name: fs.inotify.max_user_watches
+    value: "{{ fs_inotify_max_user_watches }}"
+    sysctl_file: /etc/sysctl.d/90_fs_inotify_max_user_watches.conf
+
