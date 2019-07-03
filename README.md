@@ -29,7 +29,7 @@ and selecting the *Eclipse Committers* package.
 Just drag & drop the *Install* buttons of these projects onto a running eclipse:
 
 * [PyDev](https://marketplace.eclipse.org/content/pydev-python-ide-eclipse)
-* [Mylyn GitLab Connector](https://marketplace.eclipse.org/content/mylyn-gitlab-connector)
+* [Mylyn GitLab Connector](https://marketplace.eclipse.org/content/mylyn-gitlab-connector) (If the marketplace client shows this one as incompatible, use "Install new software -> Add" and add http://pweingardt.github.com/mylyn-gitlab as an update site.)
 * [LiClipse Text](https://marketplace.eclipse.org/content/liclipsetext)
 * [YEdit](https://marketplace.eclipse.org/content/yedit)
 * [TM Terminal](https://marketplace.eclipse.org/content/tm-terminal)
