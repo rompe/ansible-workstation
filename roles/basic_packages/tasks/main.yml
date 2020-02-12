@@ -3,9 +3,9 @@
   package:
     state: present
     name:
-      - "@^workstation-product-environment"
-      - "@c-development"
-      - "@gnome-desktop"
+      - "@^Fedora Workstation"
+      - "@C Development Tools and Libraries"
+      - "@GNOME Desktop Environment"
       - ImageMagick
       - alacarte
       - alsa-utils
