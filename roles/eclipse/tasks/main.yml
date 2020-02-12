@@ -7,7 +7,7 @@
 - name: Install eclipse
   unarchive:
     remote_src: yes
-    src: 'https://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/oxygen/3a/eclipse-committers-oxygen-3a-linux-gtk-x86_64.tar.gz&r=1'
+    src: 'https://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/2019-12/R/eclipse-committers-2019-12-R-linux-gtk-x86_64.tar.gz'
     # This will create ~/eclipse/eclipse, containing an eclipse executable.
     dest: '{{ ansible_user_dir }}/eclipse/'
     creates: '{{ ansible_user_dir }}/eclipse/eclipse/eclipse'
