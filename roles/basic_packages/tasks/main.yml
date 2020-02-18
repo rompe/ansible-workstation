@@ -41,7 +41,6 @@
       - dosfstools
       - e2fsprogs
       - elfutils
-      - empathy
       - eog
       - espeak
       - espeak-ng
@@ -54,7 +53,6 @@
       - file
       - findutils
       - firefox
-      - flash-plugin
       - flatpak
       - gconf-editor
       - gimp
@@ -102,7 +100,6 @@
       - patch
       - patchutils
       - perl-Image-ExifTool
-      - photoprint
       - php-cli
       - pidgin
       - pidgin-indicator
@@ -116,7 +113,6 @@
       - python3-ansible-lint
       - rdesktop
       - recode
-      - recoverjpeg
       - remmina
       - remmina-plugins-exec
       - remmina-plugins-rdp
@@ -124,7 +120,6 @@
       - remmina-plugins-st
       - remmina-plugins-vnc
       - rhythmbox
-      - rhythmbox-equalizer
       - rsync
       - screen
       - seahorse
