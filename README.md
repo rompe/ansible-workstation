@@ -1,16 +1,17 @@
 # ansible-workstation
-Ansible playbook to update freshly installed Linux workstations for my needs
+Ansible playbook to update freshly installed Linux workstations for my needs - forked from Ulf's repo
+to adjust to my personal needs. 
 
 ## Usage
 
 For the default installation:
 ```
-ansible-pull -U https://github.com/rompe/ansible-workstation
+ansible-pull -U https://github.com/gmanic/ansible-workstation
 ```
 
 In addition, for NFS servers:
 ```
-ansible-pull -U https://github.com/rompe/ansible-workstation nfs-server.yml
+ansible-pull -U https://github.com/gmanic/ansible-workstation nfs-server.yml
 ```
 
 The host name `localhost` is used per default. This only works if /etc/ansible/hosts ist left
@@ -21,6 +22,8 @@ empty or features a `localhost` line.
 Some packages can't be installed using ansible.
 
 #### Eclipse
+I don't use Eclipse as of now, but Ulf put it in, so i left it for now.
+
 Since the Eclipse packages that come with Fedora tend to break in various ways with every new
 release, I am switching to installing Eclipse manually using the
 [Eclipse installer](https://www.eclipse.org/downloads/packages/installer)
