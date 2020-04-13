@@ -17,6 +17,8 @@
       - aspell-en
       - atop
       - automake
+      - avrdude
+      - avr-tools
       - baobab
       - bind-utils
       - binutils
@@ -54,6 +56,7 @@
       - findutils
       - firefox
       - flatpak
+      - freecad
       - gconf-editor
       - gimp
       - gimp-help-de
@@ -72,7 +75,7 @@
       - imapfilter
       - indent
       - iputils
-      - keepassxc
+      - keepass
       - langpacks-core-de
       - langpacks-de
       - lensfun
@@ -86,6 +89,7 @@
       - mplayer
       - mtools
       - mythes-de
+      - nano
       - net-tools
       - nethogs
       - netpbm
@@ -160,6 +164,7 @@
       - wmctrl
       - xdg-utils
       - xdotool
+      - xirc
       - xmlrpc-client
       - yamllint
       - zip
