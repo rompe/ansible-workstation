@@ -6,3 +6,11 @@
   with_items:
     - python2-libselinux
     - keepassxc
+    - nextcloud-client
+    - nextcloud-client-nautilus
+    - evolution
+    - evolution-langpacks
+    - xdotool
+    - screen
+    - nmap
+
