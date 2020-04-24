@@ -7,7 +7,6 @@
       - "@C Development Tools and Libraries"
       - "@GNOME Desktop Environment"
       - ImageMagick
-      - alacarte
       - alsa-utils
       - android-tools
       - ansible
@@ -63,7 +62,6 @@
       - glabels-templates
       - gparted
       - gradio
-      - gstreamer-tools
       - hdparm
       - heimdall
       - highlight
