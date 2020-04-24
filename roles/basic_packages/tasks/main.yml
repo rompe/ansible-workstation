@@ -90,7 +90,8 @@
       - nethogs
       - netpbm
       - nextcloud-client
-      - nextcloud-client-nautilus      - nfs-utils
+      - nextcloud-client-nautilus
+      - nfs-utils
       - nmap
       - ntfsprogs
       - openssh
