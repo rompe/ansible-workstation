@@ -1,0 +1,12 @@
+---
+- name: Add vscodium repository
+  yum_repository:
+    name: vscodium
+    description: vscodium
+    file: vscodium
+    gpgkey: "https://gitlab.com/paulcarroty/vscodium-deb-rpm-repo/raw/master/pub.gpg"
+    baseurl: "https://gitlab.com/paulcarroty/vscodium-deb-rpm-repo/raw/repos/rpms/"
+
+- name: Install vscodium
+  package:
+    name: codium
