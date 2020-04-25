@@ -162,3 +162,12 @@
       - xmlrpc-client
       - yamllint
       - zip
+
+- name: Install flatpaks from flathub
+  flatpak:
+    name: "{{ item }}"
+    state: present
+    remote: flathub
+  with_items:
+    - org.signal.Signal
+    - de.haeckerfelix.Shortwave
