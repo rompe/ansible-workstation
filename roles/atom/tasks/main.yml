@@ -1,0 +1,12 @@
+---
+- name: Add atom repository
+  yum_repository:
+    name: atom
+    description: atom
+    file: atom
+    gpgkey: "https://packagecloud.io/AtomEditor/atom/gpgkey"
+    baseurl: "https://packagecloud.io/AtomEditor/atom/el/7/$basearch"
+
+- name: Install atom
+  package:
+    name: atom
