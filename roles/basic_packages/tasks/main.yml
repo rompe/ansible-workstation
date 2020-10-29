@@ -19,7 +19,7 @@
       - atop
       - automake
       - avrdude
-      - avr-tools
+      - binutils-avr
       - baobab
       - bind-utils
       - binutils
