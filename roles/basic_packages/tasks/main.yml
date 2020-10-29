@@ -21,7 +21,7 @@
       - avrdude
       - binutils-avr
       - baobab
-      - bind-utils
+      - bind9-utils
       - binutils
       - brasero
       - bridge-utils
