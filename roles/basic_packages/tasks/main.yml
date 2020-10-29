@@ -71,7 +71,7 @@
       - hdparm
 #      - heimdall
       - highlight
-      - hunspell-de
+      - hunspell-de-de
       - hyphen-de
       - imapfilter
       - indent
