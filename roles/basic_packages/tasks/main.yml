@@ -3,13 +3,14 @@
   package:
     state: present
     name:
-      - "@Fedora Workstation"
-      - "@C Development Tools and Libraries"
-      - "@GNOME Desktop Environment"
+#      - "@Fedora Workstation"
+#      - "@C Development Tools and Libraries"
+#      - "@GNOME Desktop Environment"
+      - binutils
       - ImageMagick
       - alacarte
       - alsa-utils
-      - android-tools
+#      - android-tools
       - ansible
       - ant
       - aspell
@@ -31,12 +32,12 @@
       - coreutils
       - dbus-tools
       - dconf-editor
-      - desktop-backgrounds-basic
-      - desktop-backgrounds-gnome
-      - desktop-file-utils
+#      - desktop-backgrounds-basic
+#      - desktop-backgrounds-gnome
+#      - desktop-file-utils
       - diffutils
       - dmidecode
-      - dnf-utils
+#      - dnf-utils
       - docker
       - docker-compose
       - dos2unix
@@ -47,8 +48,8 @@
       - espeak
       - espeak-ng
       - etherape
-      - evolution
-      - evolution-ews
+      - evolution-data-server
+#      - evolution-ews
       - exiv2
       - fdupes
       - festival
@@ -75,10 +76,10 @@
       - imapfilter
       - indent
       - iputils
-      - keepass
-      - langpacks-core-de
-      - langpacks-de
-      - lensfun
+      - keepassxc
+#      - langpacks-core-de
+#      - langpacks-de
+      - gimp-lensfun
       - less
       - libreoffice
       - lm_sensors
@@ -118,17 +119,17 @@
       - rdesktop
       - recode
       - remmina
-      - remmina-plugins-exec
-      - remmina-plugins-rdp
-      - remmina-plugins-secret
-      - remmina-plugins-st
-      - remmina-plugins-vnc
+      - remmina-plugin-exec
+      - remmina-plugin-rdp
+      - remmina-plugin-secret
+#      - remmina-plugin-st
+      - remmina-plugin-vnc
       - rhythmbox
       - rsync
       - screen
       - seahorse
-      - setroubleshoot
-      - setroubleshoot-plugins
+#      - setroubleshoot
+#      - setroubleshoot-plugins
       - sloccount
       - smartmontools
       - sox
@@ -143,17 +144,18 @@
       - testdisk
       - texlive
       - thunderbird
-      - thunderbird-enigmail
-      - thunderbird-wayland
+      - enigmail
+      - thunderbird-gnome-support
+      - thunderbird-locale-de
       - tmux
-      - tmux-powerline
+      - tmuxinator
       - traceroute
       - tree
       - ufraw
       - usbutils
-      - vim-X11
-      - vim-enhanced
-      - vim-powerline
+      - vim-gtk3
+      - vim-scripts
+#      - vim-powerline
       - vinagre
       - vino
       - vlc
@@ -165,6 +167,6 @@
       - xdg-utils
       - xdotool
       - xirc
-      - xmlrpc-client
+      - xmlrpc-api-utils
       - yamllint
       - zip
