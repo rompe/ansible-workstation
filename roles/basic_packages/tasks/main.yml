@@ -64,7 +64,7 @@
       - git
       - git-extras
       - glabels
-      - glabels-templates
+      - glabels-data
       - gparted
       - gradio
       - gstreamer-tools
