@@ -30,7 +30,7 @@
       - calibre
       - cifs-utils
       - coreutils
-      - dbus-tools
+#      - dbus-tools
       - dconf-editor
 #      - desktop-backgrounds-basic
 #      - desktop-backgrounds-gnome
