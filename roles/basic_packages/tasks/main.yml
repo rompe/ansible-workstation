@@ -7,7 +7,7 @@
 #      - "@C Development Tools and Libraries"
 #      - "@GNOME Desktop Environment"
       - binutils
-      - ImageMagick
+      - imagemagick
       - alacarte
       - alsa-utils
 #      - android-tools
