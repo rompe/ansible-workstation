@@ -46,19 +46,11 @@ Just drag & drop the *Install* buttons of these projects onto a running eclipse:
 
 Further, I use esp32 tools.
 
-For the EGit Mylyn Connector (which should be
-[here](http://marketplace.eclipse.org/content/github-mylyn-connector) but isn't at the moment),
-add these Update Sites:
-
-* http://download.eclipse.org/egit/updates
-* http://download.eclipse.org/egit/github/updates
-
-Maybe the marketplace page is gone because the project is getting integrated to the main bundle?
-Check that.
-
 For the Mylyn Web Templates connector the incubator has to be added to the update sites:
 
 * http://download.eclipse.org/mylyn/incubator/latest/
+
+next points to be checked first...
 
 ##### Mylyn GitLab Connector
 
