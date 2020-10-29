@@ -1,11 +1,9 @@
 ---
 - name: Add atom repository
-  yum_repository:
-    name: atom
-    description: atom
-    file: atom
+  apt_repository:
+    filename: atom
     gpgkey: "https://packagecloud.io/AtomEditor/atom/gpgkey"
-    baseurl: "https://packagecloud.io/AtomEditor/atom/el/7/$basearch"
+    repo: "deb [arch=amd64] https://packagecloud.io/AtomEditor/atom/any/ any main"
 
 - name: Install atom
   package:
