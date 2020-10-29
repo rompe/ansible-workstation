@@ -67,7 +67,7 @@
       - glabels-data
       - gparted
 #      - gradio
-      - gstreamer-tools
+#      - gstreamer-tools
       - hdparm
       - heimdall
       - highlight
