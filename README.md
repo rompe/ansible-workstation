@@ -41,6 +41,10 @@ Just drag & drop the *Install* buttons of these projects onto a running eclipse:
 * [MoreUnit](https://marketplace.eclipse.org/content/moreunit)
 * [Eclipse Docker Tooling](https://marketplace.eclipse.org/content/eclipse-docker-tooling)
 * [Subclipse](https://marketplace.eclipse.org/content/subclipse)
+* [esp32 esp-idf eclipse-plugin](https://marketplace.eclipse.org/content/esp-idf-eclipse-plugin)
+* [esp32 devel tools](https://marketplace.eclipse.org/content/esp32-cc-development-tools)
+
+Further, I use esp32 tools.
 
 For the EGit Mylyn Connector (which should be
 [here](http://marketplace.eclipse.org/content/github-mylyn-connector) but isn't at the moment),
