@@ -4,6 +4,7 @@
   roles:
     - basic_packages
     - inotify_max_user_watches
+    - atom
 
 - hosts: localhost
   become: false
