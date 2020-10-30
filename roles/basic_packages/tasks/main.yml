@@ -79,6 +79,8 @@
       - keepassxc
 #      - langpacks-core-de
 #      - langpacks-de
+      - default-jdk-headless
+      - default-jdk-headless
       - gimp-lensfun
       - less
       - libreoffice
@@ -94,24 +96,70 @@
       - net-tools
       - nethogs
       - netpbm
-      - nextcloud-client
-      - nfs-utils
+      - netplan.io
+      - nextcloud-desktop
+      - nextcloud-desktop-cmd
+      - network-manager-openvpn
+      - network-manager-openvpn-gnome
+      - network-manager-config-connectivity-ubuntu
+      - networkd-dispatcher
+      - nfs-common
+      - ninja-build
       - nmap
-      - ntfsprogs
-      - openssh
+      - nmap-common
+      - libntfs-utils
+      - nmapsi4
+      - nodejs
+#Setup node-js - todo
+#      - 
+      - notify-osd
+      - notify-osd-icons
+      - ntopng
+      - ntopng-data
+      - nux-tools
+      - ocrfeeder
+      - okular
+      - okular-extra-backends
+      - openipmi
+      - openjdk-11-jdk:amd64
+      - openjdk-11-jdk-headless:amd64
+      - openjdk-11-jre:amd64
+      - openjdk-11-jre-headless:amd64
+      - openjdk-14-jre:amd64
+      - openjdk-14-jre-headless:amd64
+      - openjfx
+      - openjfx-source
+      - openmpi-bin
+      - openpgp-applet
+      - openshot
+      - openshot-qt
+      - openssh-client
+      - openssh-server
+      - openssl
       - openvpn
+      - openvpn-systemd-resolved
+      - orca
       - os-prober
+      - osinfo-db
+      - ovmf
       - p0f
       - patch
+      - parted
+      - p11-kit
+      - packagekit
+      - packagekit-tools
+      - passwd
+      - pci.ids
       - patchutils
-      - perl-Image-ExifTool
+      - libimage-exiftool-perl
       - php-cli
       - pidgin
-      - pidgin-indicator
-      - poedit
-      - poppler-utils
-      - powerline
-      - powerline-fonts
+      - pidgin-data
+      - pidgin-plugin-pack
+#      - poedit
+#      - poppler-utils
+#      - powerline
+#      - powerline-fonts
       - psmisc
       - pulseaudio-utils
       - python3-libselinux
@@ -133,9 +181,9 @@
       - sloccount
       - smartmontools
       - sox
-      - sqlite
+      - sqlite3
       - strace
-      - subversion
+      - subversion-tools
       - swaks
       - symlinks
       - tar
@@ -151,7 +199,7 @@
       - tmuxinator
       - traceroute
       - tree
-      - ufraw
+#      - ufraw
       - usbutils
       - vim-gtk3
       - vim-scripts
@@ -166,7 +214,7 @@
       - wmctrl
       - xdg-utils
       - xdotool
-      - xirc
+      - hexchat
       - xmlrpc-api-utils
       - yamllint
       - zip
