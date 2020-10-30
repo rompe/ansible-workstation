@@ -163,8 +163,8 @@
 #      - powerline-fonts
       - psmisc
       - pulseaudio-utils
-      - python3-libselinux
-      - python3-ansible-lint
+      - python3-selinux
+      - python3-pytest-pylint
       - rdesktop
       - recode
       - remmina
