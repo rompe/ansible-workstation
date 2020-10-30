@@ -86,7 +86,7 @@
       - gimp-lensfun
       - less
       - libreoffice
-      - lm_sensors
+      - lm-sensors
       - lshw
       - lsof
       - make
