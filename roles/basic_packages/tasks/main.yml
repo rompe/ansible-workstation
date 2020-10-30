@@ -210,7 +210,7 @@
       - vlc
       - vlc-plugin-access-extra
       - wget
-      - which
+#      - which
       - wireshark
       - wmctrl
       - xdg-utils
