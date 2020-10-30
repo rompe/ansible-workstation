@@ -109,7 +109,7 @@
       - ninja-build
       - nmap
       - nmap-common
-      - libntfs-utils
+      - libfsntfs-utils
       - nmapsi4
       - nodejs
 #Setup node-js - todo
