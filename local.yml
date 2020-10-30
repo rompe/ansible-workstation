@@ -4,9 +4,9 @@
   roles:
     - basic_packages
     - inotify_max_user_watches
-    - atom
+#    - atom
 
 - hosts: localhost
   become: false
   roles:
-    - eclipse
+    - flathub
