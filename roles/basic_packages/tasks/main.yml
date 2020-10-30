@@ -35,7 +35,7 @@
       - default-jdk-headless
 
       - default-jdk-headless
-
+      - gnome-software-plugin-flatpak
 #      - desktop-backgrounds-basic
 #      - desktop-backgrounds-gnome
 #      - desktop-file-utils
