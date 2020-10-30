@@ -32,6 +32,10 @@
       - coreutils
 #      - dbus-tools
       - dconf-editor
+      - default-jdk-headless
+
+      - default-jdk-headless
+
 #      - desktop-backgrounds-basic
 #      - desktop-backgrounds-gnome
 #      - desktop-file-utils
@@ -75,12 +79,10 @@
       - hyphen-de
       - imapfilter
       - indent
-      - iputils
+#      - iputils
       - keepassxc
 #      - langpacks-core-de
 #      - langpacks-de
-      - default-jdk-headless
-      - default-jdk-headless
       - gimp-lensfun
       - less
       - libreoffice
