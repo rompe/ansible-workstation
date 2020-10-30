@@ -90,7 +90,7 @@
       - lshw
       - lsof
       - make
-      - mkpasswd
+      - passwd
       - mplayer
       - mtools
       - mythes-de
@@ -150,7 +150,6 @@
       - p11-kit
       - packagekit
       - packagekit-tools
-      - passwd
       - pci.ids
       - patchutils
       - libimage-exiftool-perl
