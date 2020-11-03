@@ -191,6 +191,7 @@
       - smartmontools
       - sox
       - sqlite3
+      - ssh-askpass
       - strace
       - subversion-tools
       - swaks
