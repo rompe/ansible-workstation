@@ -113,7 +113,6 @@
       - network-manager-config-connectivity-ubuntu
       - networkd-dispatcher
       - nfs-common
-      - ninja
       - ninja-build
       - nmap
       - nmap-common
