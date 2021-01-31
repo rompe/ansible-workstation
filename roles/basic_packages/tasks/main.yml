@@ -2,7 +2,7 @@
 - name: Install basic packages
   package:
     state: present
-    use: apt
+#    use: apt
     name:
       - "@Fedora Workstation"
       - "@C Development Tools and Libraries"
