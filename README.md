@@ -6,7 +6,7 @@ to adjust to my personal needs.
 
 For the default installation:
 ```
-ansible-pull -U https://github.com/gmanic/ansible-workstation
+ansible-pull -U https://github.com/gmanic/ansible-workstation -K -i <hostname of target>
 ```
 
 In addition, for NFS servers:
@@ -67,4 +67,4 @@ Just add this site to Eclipse and install the connector.
 
 ## Disclaimer
 
-If you aren't me, you probably don't want to use this.
+If you aren't me (or Jens), you probably don't want to use this.
