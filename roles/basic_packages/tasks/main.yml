@@ -4,14 +4,14 @@
     state: present
     use: apt
     name:
-#      - "@Fedora Workstation"
-#      - "@C Development Tools and Libraries"
+      - "@Fedora Workstation"
+      - "@C Development Tools and Libraries"
 #      - "@GNOME Desktop Environment"
       - binutils
       - imagemagick
       - alacarte
       - alsa-utils
-#      - android-tools
+      - android-tools
       - ansible
       - ant
       - aspell
@@ -34,18 +34,18 @@
       - cifs-utils
       - cmake
       - coreutils
-#      - dbus-tools
+      - dbus-tools
       - dconf-editor
       - default-jdk-headless
 
       - default-jdk-headless
       - gnome-software-plugin-flatpak
-#      - desktop-backgrounds-basic
-#      - desktop-backgrounds-gnome
-#      - desktop-file-utils
+      - desktop-backgrounds-basic
+      - desktop-backgrounds-gnome
+      - desktop-file-utils
       - diffutils
       - dmidecode
-#      - dnf-utils
+      - dnf-utils
       - docker
       - docker-compose
       - dos2unix
@@ -57,7 +57,7 @@
       - espeak-ng
       - etherape
       - evolution-data-server
-#      - evolution-ews
+      - evolution-ews
       - exiv2
       - fdupes
       - festival
@@ -77,19 +77,19 @@
       - glabels
       - glabels-data
       - gparted
-#      - gradio
-#      - gstreamer-tools
+      - gradio
+      - gstreamer-tools
       - hdparm
-#      - heimdall
+      - heimdall
       - highlight
       - hunspell-de-de
       - hyphen-de
       - imapfilter
       - indent
-#      - iputils
+      - iputils
       - keepassxc
-#      - langpacks-core-de
-#      - langpacks-de
+      - langpacks-core-de
+      - langpacks-de
       - gimp-lensfun
       - less
       - libreoffice
@@ -164,10 +164,10 @@
       - pidgin
       - pidgin-data
       - pidgin-plugin-pack
-#      - poedit
-#      - poppler-utils
-#      - powerline
-#      - powerline-fonts
+      - poedit
+      - poppler-utils
+      - powerline
+      - powerline-fonts
       - psmisc
       - pulseaudio-utils
       - python3-selinux
@@ -178,14 +178,14 @@
       - remmina-plugin-exec
       - remmina-plugin-rdp
       - remmina-plugin-secret
-#      - remmina-plugin-st
+      - remmina-plugin-st
       - remmina-plugin-vnc
       - rhythmbox
       - rsync
       - screen
       - seahorse
-#      - setroubleshoot
-#      - setroubleshoot-plugins
+      - setroubleshoot
+      - setroubleshoot-plugins
       - sloccount
       - smartmontools
       - sox
@@ -208,17 +208,17 @@
       - tmuxinator
       - traceroute
       - tree
-#      - ufraw
+      - ufraw
       - usbutils
       - vim-gtk3
       - vim-scripts
-#      - vim-powerline
+      - vim-powerline
       - vinagre
       - vino
       - vlc
       - vlc-plugin-access-extra
       - wget
-#      - which
+      - which
       - wireshark
       - wmctrl
       - xdg-utils
