@@ -81,7 +81,7 @@
       - lsof
       - make
       - mkpasswd
-      - mplayer
+#      - mplayer
       - mtools
       - mythes-de
       - net-tools
@@ -151,8 +151,8 @@
       - vim-powerline
       - vinagre
       - vino
-      - vlc
-      - vlc-extras
+ #     - vlc
+ #     - vlc-extras
       - wget
       - which
       - wireshark
