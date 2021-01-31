@@ -2,14 +2,11 @@
 - name: Install basic packages
   package:
     state: present
-#    use: apt
     name:
       - "@Fedora Workstation"
       - "@C Development Tools and Libraries"
 #      - "@GNOME Desktop Environment"
-      - binutils
-      - imagemagick
-      - alacarte
+      - ImageMagick
       - alsa-utils
       - android-tools
       - ansible
@@ -19,12 +16,8 @@
       - aspell-en
       - atop
       - automake
-      - avrdude
-      - gcc-avr
-      - make
-      - binutils-avr
       - baobab
-      - bind9-utils
+      - bind-utils
       - binutils
       - brasero
       - bridge-utils
@@ -32,14 +25,9 @@
       - cabextract
       - calibre
       - cifs-utils
-      - cmake
       - coreutils
       - dbus-tools
       - dconf-editor
-      - default-jdk-headless
-
-      - default-jdk-headless
-      - gnome-software-plugin-flatpak
       - desktop-backgrounds-basic
       - desktop-backgrounds-gnome
       - desktop-file-utils
@@ -56,7 +44,7 @@
       - espeak
       - espeak-ng
       - etherape
-      - evolution-data-server
+      - evolution
       - evolution-ews
       - exiv2
       - fdupes
@@ -65,24 +53,19 @@
       - findutils
       - firefox
       - flatpak
-      - freecad
-      - fritzing
-      - fritzing-data
-      - fritzing-parts
       - gconf-editor
       - gimp
       - gimp-help-de
       - git
       - git-extras
       - glabels
-      - glabels-data
+      - glabels-templates
       - gparted
       - gradio
-      - gstreamer-tools
       - hdparm
       - heimdall
       - highlight
-      - hunspell-de-de
+      - hunspell-de
       - hyphen-de
       - imapfilter
       - indent
@@ -90,96 +73,51 @@
       - keepassxc
       - langpacks-core-de
       - langpacks-de
-      - gimp-lensfun
+      - lensfun
       - less
       - libreoffice
-      - lm-sensors
+      - lm_sensors
       - lshw
       - lsof
       - make
-      - passwd
+      - mkpasswd
       - mplayer
       - mtools
       - mythes-de
-      - nano
       - net-tools
       - nethogs
       - netpbm
-      - netplan.io
-      - nextcloud-desktop
-      - nextcloud-desktop-cmd
-      - network-manager-openvpn
-      - network-manager-openvpn-gnome
-      - network-manager-config-connectivity-ubuntu
-      - networkd-dispatcher
-      - nfs-common
-      - ninja-build
+      - nextcloud-client
+      - nextcloud-client-nautilus
+      - nfs-utils
       - nmap
-      - nmap-common
-      - libfsntfs-utils
-      - nmapsi4
-      - nodejs
-#Setup node-js - todo
-#      - 
-      - notify-osd
-      - notify-osd-icons
-      - ntopng
-      - ntopng-data
-      - nux-tools
-      - ocrfeeder
-      - okular
-      - okular-extra-backends
-      - openipmi
-      - openjdk-11-jdk:amd64
-      - openjdk-11-jdk-headless:amd64
-      - openjdk-11-jre:amd64
-      - openjdk-11-jre-headless:amd64
-      - openjdk-14-jre:amd64
-      - openjdk-14-jre-headless:amd64
-      - openjfx
-      - openjfx-source
-      - openmpi-bin
-      - openpgp-applet
-      - openshot
-      - openshot-qt
-      - openssh-client
-      - openssh-server
-      - openssl
+      - ntfsprogs
+      - openssh
       - openvpn
-      - openvpn-systemd-resolved
-      - orca
       - os-prober
-      - osinfo-db
-      - ovmf
       - p0f
       - patch
-      - parted
-      - p11-kit
-      - packagekit
-      - packagekit-tools
-      - pci.ids
       - patchutils
-      - libimage-exiftool-perl
+      - perl-Image-ExifTool
       - php-cli
       - pidgin
-      - pidgin-data
-      - pidgin-plugin-pack
+      - pidgin-indicator
       - poedit
       - poppler-utils
       - powerline
       - powerline-fonts
       - psmisc
       - pulseaudio-utils
-      - python3-selinux
-      - python3-pytest-pylint
+      - python3-libselinux
+      - python3-ansible-lint
       - rdesktop
       - recode
       - remmina
-      - remmina-plugin-exec
-      - remmina-plugin-rdp
-      - remmina-plugin-secret
-      - remmina-plugin-st
-      - remmina-plugin-vnc
+      - remmina-plugins-exec
+      - remmina-plugins-rdp
+      - remmina-plugins-secret
+      - remmina-plugins-st
+      - remmina-plugins-vnc
       - rhythmbox
       - rsync
       - screen
@@ -189,10 +127,9 @@
       - sloccount
       - smartmontools
       - sox
-      - sqlite3
-      - ssh-askpass
+      - sqlite
       - strace
-      - subversion-tools
+      - subversion
       - swaks
       - symlinks
       - tar
@@ -201,29 +138,36 @@
       - testdisk
       - texlive
       - thunderbird
-      - enigmail
-      - thunderbird-gnome-support
-      - thunderbird-locale-de
+      - thunderbird-enigmail
+      - thunderbird-wayland
       - tmux
-      - tmuxinator
+      - tmux-powerline
       - traceroute
       - tree
       - ufraw
       - usbutils
-      - vim-gtk3
-      - vim-scripts
+      - vim-X11
+      - vim-enhanced
       - vim-powerline
       - vinagre
       - vino
       - vlc
-      - vlc-plugin-access-extra
+      - vlc-extras
       - wget
       - which
       - wireshark
       - wmctrl
       - xdg-utils
       - xdotool
-      - hexchat
-      - xmlrpc-api-utils
+      - xmlrpc-client
       - yamllint
       - zip
+
+- name: Install flatpaks from flathub
+  flatpak:
+    name: "{{ item }}"
+    state: present
+    remote: flathub
+  with_items:
+    - org.signal.Signal
+    - de.haeckerfelix.Shortwave
