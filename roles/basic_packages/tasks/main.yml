@@ -5,7 +5,7 @@
     name:
       - "@Fedora Workstation"
       - "@C Development Tools and Libraries"
-      - "@GNOME Desktop Environment"
+ #     - "@GNOME Desktop Environment"
       - ImageMagick
       - alacarte
       - alsa-utils
