@@ -1,0 +1,10 @@
+---
+- name: Add atom repository
+  apt_repository:
+    filename: atom
+    gpgkey: "https://packagecloud.io/AtomEditor/atom/gpgkey"
+    repo: "deb [arch=amd64] https://packagecloud.io/AtomEditor/atom/any/ any main"
+
+- name: Install atom
+  package:
+    name: atom

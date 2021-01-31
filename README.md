@@ -41,20 +41,16 @@ Just drag & drop the *Install* buttons of these projects onto a running eclipse:
 * [MoreUnit](https://marketplace.eclipse.org/content/moreunit)
 * [Eclipse Docker Tooling](https://marketplace.eclipse.org/content/eclipse-docker-tooling)
 * [Subclipse](https://marketplace.eclipse.org/content/subclipse)
+* [esp32 esp-idf eclipse-plugin](https://marketplace.eclipse.org/content/esp-idf-eclipse-plugin)
+* [esp32 devel tools](https://marketplace.eclipse.org/content/esp32-cc-development-tools)
 
-For the EGit Mylyn Connector (which should be
-[here](http://marketplace.eclipse.org/content/github-mylyn-connector) but isn't at the moment),
-add these Update Sites:
-
-* http://download.eclipse.org/egit/updates
-* http://download.eclipse.org/egit/github/updates
-
-Maybe the marketplace page is gone because the project is getting integrated to the main bundle?
-Check that.
+Further, I use esp32 tools.
 
 For the Mylyn Web Templates connector the incubator has to be added to the update sites:
 
 * http://download.eclipse.org/mylyn/incubator/latest/
+
+next points to be checked first...
 
 ##### Mylyn GitLab Connector
 

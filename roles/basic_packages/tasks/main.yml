@@ -2,11 +2,13 @@
 - name: Install basic packages
   package:
     state: present
+#    use: apt
     name:
       - "@Fedora Workstation"
       - "@C Development Tools and Libraries"
- #     - "@GNOME Desktop Environment"
-      - ImageMagick
+#      - "@GNOME Desktop Environment"
+      - binutils
+      - imagemagick
       - alacarte
       - alsa-utils
       - android-tools
@@ -18,9 +20,11 @@
       - atop
       - automake
       - avrdude
-      - avr-tools
+      - gcc-avr
+      - make
+      - binutils-avr
       - baobab
-      - bind-utils
+      - bind9-utils
       - binutils
       - brasero
       - bridge-utils
@@ -28,9 +32,14 @@
       - cabextract
       - calibre
       - cifs-utils
+      - cmake
       - coreutils
       - dbus-tools
       - dconf-editor
+      - default-jdk-headless
+
+      - default-jdk-headless
+      - gnome-software-plugin-flatpak
       - desktop-backgrounds-basic
       - desktop-backgrounds-gnome
       - desktop-file-utils
@@ -47,7 +56,7 @@
       - espeak
       - espeak-ng
       - etherape
-      - evolution
+      - evolution-data-server
       - evolution-ews
       - exiv2
       - fdupes
@@ -57,35 +66,38 @@
       - firefox
       - flatpak
       - freecad
+      - fritzing
+      - fritzing-data
+      - fritzing-parts
       - gconf-editor
       - gimp
       - gimp-help-de
       - git
       - git-extras
       - glabels
-      - glabels-templates
+      - glabels-data
       - gparted
       - gradio
       - gstreamer-tools
       - hdparm
       - heimdall
       - highlight
-      - hunspell-de
+      - hunspell-de-de
       - hyphen-de
       - imapfilter
       - indent
       - iputils
-      - keepass
+      - keepassxc
       - langpacks-core-de
       - langpacks-de
-      - lensfun
+      - gimp-lensfun
       - less
       - libreoffice
-      - lm_sensors
+      - lm-sensors
       - lshw
       - lsof
       - make
-      - mkpasswd
+      - passwd
       - mplayer
       - mtools
       - mythes-de
@@ -93,36 +105,81 @@
       - net-tools
       - nethogs
       - netpbm
-      - nextcloud-client
-      - nfs-utils
+      - netplan.io
+      - nextcloud-desktop
+      - nextcloud-desktop-cmd
+      - network-manager-openvpn
+      - network-manager-openvpn-gnome
+      - network-manager-config-connectivity-ubuntu
+      - networkd-dispatcher
+      - nfs-common
+      - ninja-build
       - nmap
-      - ntfsprogs
-      - openssh
+      - nmap-common
+      - libfsntfs-utils
+      - nmapsi4
+      - nodejs
+#Setup node-js - todo
+#      - 
+      - notify-osd
+      - notify-osd-icons
+      - ntopng
+      - ntopng-data
+      - nux-tools
+      - ocrfeeder
+      - okular
+      - okular-extra-backends
+      - openipmi
+      - openjdk-11-jdk:amd64
+      - openjdk-11-jdk-headless:amd64
+      - openjdk-11-jre:amd64
+      - openjdk-11-jre-headless:amd64
+      - openjdk-14-jre:amd64
+      - openjdk-14-jre-headless:amd64
+      - openjfx
+      - openjfx-source
+      - openmpi-bin
+      - openpgp-applet
+      - openshot
+      - openshot-qt
+      - openssh-client
+      - openssh-server
+      - openssl
       - openvpn
+      - openvpn-systemd-resolved
+      - orca
       - os-prober
+      - osinfo-db
+      - ovmf
       - p0f
       - patch
+      - parted
+      - p11-kit
+      - packagekit
+      - packagekit-tools
+      - pci.ids
       - patchutils
-      - perl-Image-ExifTool
+      - libimage-exiftool-perl
       - php-cli
       - pidgin
-      - pidgin-indicator
+      - pidgin-data
+      - pidgin-plugin-pack
       - poedit
       - poppler-utils
       - powerline
       - powerline-fonts
       - psmisc
       - pulseaudio-utils
-      - python3-libselinux
-      - python3-ansible-lint
+      - python3-selinux
+      - python3-pytest-pylint
       - rdesktop
       - recode
       - remmina
-      - remmina-plugins-exec
-      - remmina-plugins-rdp
-      - remmina-plugins-secret
-      - remmina-plugins-st
-      - remmina-plugins-vnc
+      - remmina-plugin-exec
+      - remmina-plugin-rdp
+      - remmina-plugin-secret
+      - remmina-plugin-st
+      - remmina-plugin-vnc
       - rhythmbox
       - rsync
       - screen
@@ -132,9 +189,10 @@
       - sloccount
       - smartmontools
       - sox
-      - sqlite
+      - sqlite3
+      - ssh-askpass
       - strace
-      - subversion
+      - subversion-tools
       - swaks
       - symlinks
       - tar
@@ -143,28 +201,29 @@
       - testdisk
       - texlive
       - thunderbird
-      - thunderbird-enigmail
-      - thunderbird-wayland
+      - enigmail
+      - thunderbird-gnome-support
+      - thunderbird-locale-de
       - tmux
-      - tmux-powerline
+      - tmuxinator
       - traceroute
       - tree
       - ufraw
       - usbutils
-      - vim-X11
-      - vim-enhanced
+      - vim-gtk3
+      - vim-scripts
       - vim-powerline
       - vinagre
       - vino
       - vlc
-      - vlc-extras
+      - vlc-plugin-access-extra
       - wget
       - which
       - wireshark
       - wmctrl
       - xdg-utils
       - xdotool
-      - xirc
-      - xmlrpc-client
+      - hexchat
+      - xmlrpc-api-utils
       - yamllint
       - zip
