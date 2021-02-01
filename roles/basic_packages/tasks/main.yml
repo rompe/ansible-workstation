@@ -179,3 +179,18 @@
     - org.signal.Signal
     - de.haeckerfelix.Shortwave
     
+- name: [vscodium] import required gpgkey
+  rpm_key:
+    state: present
+    key: https://gitlab.com/paulcarroty/vscodium-deb-rpm-repo/raw/master/pub.gpg
+
+- name: [vscodium] add required repository
+  yum_repository:
+    name: gitlab.com_paulcarroty_vscodium_repo
+    description: Binary release repo for VSCodium
+    baseurl: https://paulcarroty.gitlab.io/vscodium-deb-rpm-repo/rpms/
+    gpgkey: https://gitlab.com/paulcarroty/vscodium-deb-rpm-repo/raw/master/pub.gpg
+    gpgcheck: yes
+    repo_gpgcheck: yes
+
+- name: [vscodium] 
