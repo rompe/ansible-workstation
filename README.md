@@ -17,6 +17,12 @@ ansible-pull -U https://github.com/gmanic/ansible-workstation nfs-server.yml
 The host name `localhost` is used per default. This only works if /etc/ansible/hosts ist left
 empty or features a `localhost` line.
 
+## To be configured manually, if needed
+* Enable sshd.service
+* Define automount map (stored offline)
+* Enable autofs.service
+
+
 ## To be added manually
 
 Some packages can't be installed using ansible.
