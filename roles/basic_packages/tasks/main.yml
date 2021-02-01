@@ -15,6 +15,7 @@
       - aspell-de
       - aspell-en
       - atop
+      - autofs
       - automake
       - baobab
       - bind-utils
