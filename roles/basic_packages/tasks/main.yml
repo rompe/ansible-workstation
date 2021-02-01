@@ -178,7 +178,7 @@
   with_items:
     - org.signal.Signal
     - de.haeckerfelix.Shortwave
-    
+
 - name: [vscodium] import required gpgkey
   rpm_key:
     state: present
