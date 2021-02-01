@@ -192,3 +192,9 @@
     gpgkey: https://gitlab.com/paulcarroty/vscodium-deb-rpm-repo/raw/master/pub.gpg
     gpgcheck: yes
     repo_gpgcheck: yes
+
+- name: vscodium - install binary
+  package:
+    state: present
+    name:
+      - codium
