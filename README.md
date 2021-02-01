@@ -21,6 +21,7 @@ empty or features a `localhost` line.
 * Enable sshd.service
 * Define automount map (stored offline)
 * Enable autofs.service
+* Perhaps change codium's marketplace
 
 
 ## To be added manually
