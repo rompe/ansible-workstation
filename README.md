@@ -6,7 +6,7 @@ to adjust to my personal needs.
 
 For the default installation:
 ```
-ansible-pull -U https://github.com/gmanic/ansible-workstation -K -i <hostname of target>
+ansible-pull -U https://github.com/gmanic/ansible-workstation -K
 ```
 
 In addition, for NFS servers:
@@ -22,6 +22,10 @@ empty or features a `localhost` line.
 * Define automount map (stored offline)
 * Enable autofs.service
 * Perhaps change codium's marketplace
+* Setup openvpn
+* Setup keybindings for desktop
+* Setup virt-manager details
+* ...
 
 
 ## To be added manually
