@@ -17,6 +17,7 @@
       - atop
       - autofs
       - automake
+      - autossh
       - baobab
       - bind-utils
       - binutils
