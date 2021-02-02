@@ -160,6 +160,7 @@
       - wmctrl
       - xdg-utils
       - xdotool
+      - xirc
       - xmlrpc-client
       - yamllint
       - zip
