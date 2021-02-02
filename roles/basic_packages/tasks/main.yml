@@ -64,6 +64,7 @@
       - gparted
       - gradio
       - hdparm
+      - hexchat
       - heimdall
       - highlight
       - hunspell-de
@@ -160,7 +161,6 @@
       - wmctrl
       - xdg-utils
       - xdotool
-      - xirc
       - xmlrpc-client
       - yamllint
       - zip
