@@ -201,3 +201,10 @@
     state: present
     name:
       - codium
+
+- name: Atom install
+  package:
+    state: present
+    name:
+      - redhat-lsb-core
+      - clang
