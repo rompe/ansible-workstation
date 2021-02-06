@@ -20,7 +20,7 @@ empty or features a `localhost` line.
 ## To be configured manually, if needed
 * (Enable sshd.service - implemented)
 * Define automount map (stored offline)
-* Enable autofs.service
+* Enable autofs.service (obviously, it is required with -33 to `setsebool -P nis_enabled 1` to enable rpcbind...
 * Perhaps change codium's marketplace
 * Setup openvpn
 * Setup keybindings for desktop
