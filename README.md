@@ -26,6 +26,8 @@ empty or features a `localhost` line.
 * Setup keybindings for desktop
 * Setup virt-manager details
 * ...
+* install rpmfusion repos manually (dnf install....) for obs-studio
+* compile and install v4l2loopback
 
 
 ## To be added manually
