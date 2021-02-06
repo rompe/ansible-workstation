@@ -171,7 +171,7 @@
   flatpak_remote:
     name: flathub
     state: present
-    flatpakrepo_url: https://dl.flathub.org/repo/flathub.flatpakrepo
+    flatpakrepo_url: https://flathub.org/repo/flathub.flatpakrepo
 
 - name: Install flatpaks from flathub
   flatpak:
@@ -202,9 +202,9 @@
     name:
       - codium
 
-- name: Atom install
-  package:
-    state: present
-    name:
-      - redhat-lsb-core
-      - clang
+#- name: Atom install
+#  package:
+#    state: present
+#    name:
+#      - redhat-lsb-core
+#      - clang
