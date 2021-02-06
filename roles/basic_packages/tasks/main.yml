@@ -41,6 +41,7 @@
       - dos2unix
       - dosfstools
       - e2fsprogs
+      - ecryptfs-utils
       - elfutils
       - eog
       - espeak
@@ -201,6 +202,13 @@
     state: present
     name:
       - codium
+
+- name: enable sshd.service
+  systemd:
+    name: sshd
+    enabled: yes
+    state: started
+
 
 #- name: Atom install
 #  package:
