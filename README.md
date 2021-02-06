@@ -18,7 +18,7 @@ The host name `localhost` is used per default. This only works if /etc/ansible/h
 empty or features a `localhost` line.
 
 ## To be configured manually, if needed
-* Enable sshd.service
+* (Enable sshd.service - implemented)
 * Define automount map (stored offline)
 * Enable autofs.service
 * Perhaps change codium's marketplace
