@@ -220,7 +220,8 @@
 - name: enable rpmfusion nonfree repo
   yum_repository:
     name: rpmfusion_nonfree
-    description: rpm fusion free packages
+    description: rpm fusion nonfree packages
+    baseurl: https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-33.noarch.rpm
     repo_gpgcheck: yes
 
 #- name: Atom install
