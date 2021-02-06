@@ -151,6 +151,7 @@
       - traceroute
       - tree
       - ufraw
+      - ungoogled-chromium
       - usbutils
       - vim-X11
       - vim-enhanced
