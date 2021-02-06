@@ -209,6 +209,31 @@
     enabled: yes
     state: started
 
+- name: gpg_keys rpmfusion-free
+  rpm_key:
+    state: present
+    key: https://rpmfusion.org/keys?action=AttachFile&do=view&target=RPM-GPG-KEY-rpmfusion-free-fedora-2020
+
+- name: gpg_keys rpmfusion-nonfree
+  rpm_key:
+    state: present
+    key: https://rpmfusion.org/keys?action=AttachFile&do=view&target=RPM-GPG-KEY-rpmfusion-nonfree-fedora-2020
+
+- name: enable rpmfusion free repo
+  yum_repository:
+    name: rpmfusion free
+    description: rpm fusion free packages
+    baseurl: https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm
+    gpgkey: https://rpmfusion.org/keys?action=AttachFile&do=view&target=RPM-GPG-KEY-rpmfusion-free-fedora-2020
+    repo_gpgheck: yes
+
+- name: enable rpmfusion nonfree repo
+  yum_repository:
+    name: rpmfusion nonfree
+    description: rpm fusion free packages
+    baseurl: https://mirrors.rpmfusion.org/free/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
+    gpgkey: https://rpmfusion.org/keys?action=AttachFile&do=view&target=RPM-GPG-KEY-rpmfusion-nonfree-fedora-2020
+    repo_gpgheck: yes
 
 #- name: Atom install
 #  package:
