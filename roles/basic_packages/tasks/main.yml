@@ -76,6 +76,7 @@
       - indent
       - iputils
       - keepassxc
+      - kernel-devel
       - langpacks-core-de
       - langpacks-de
       - lensfun
