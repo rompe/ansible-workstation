@@ -89,7 +89,7 @@
       - lsof
       - make
       - mkpasswd
-      - mosquittogit
+      - mosquitto
 #      - mplayer
       - mtools
       - mythes-de
