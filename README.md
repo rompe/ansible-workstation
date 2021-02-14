@@ -28,7 +28,9 @@ empty or features a `localhost` line.
 * ...
 * install rpmfusion repos manually (dnf install....) for obs-studio
 * compile and install v4l2loopback
-
+  needed for chrome (-> Signal-flatpak) the following options are needed:
+  `modprobe v4l2loop devices=1 card_label="loopback 1" exclusive_caps=1,1,1,1,1,1,1,1`
+* example settings, as reminder: windows - unlock modal windows from parent, set proper startup programs
 
 ## To be added manually
 

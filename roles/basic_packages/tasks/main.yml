@@ -28,6 +28,7 @@
       - calibre
       - cifs-utils
       - coreutils
+      - chromium-browser-privacy
       - dbus-tools
       - dconf-editor
       - desktop-backgrounds-basic
@@ -88,7 +89,7 @@
       - lsof
       - make
       - mkpasswd
-      - mosquitto
+      - mosquittogit
 #      - mplayer
       - mtools
       - mythes-de
@@ -154,7 +155,7 @@
       - traceroute
       - tree
       - ufraw
-      - ungoogled-chromium
+#      - ungoogled-chromium
       - usbutils
       - vim-X11
       - vim-enhanced
@@ -162,8 +163,8 @@
       - vinagre
       - vino
       - virt-manager
- #     - vlc
- #     - vlc-extras
+#      - vlc
+#      - vlc-extras
       - wget
       - which
       - wireshark
