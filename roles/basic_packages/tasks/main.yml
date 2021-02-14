@@ -64,6 +64,7 @@
       - git-extras
       - glabels
       - glabels-templates
+      - gnome-tweaks
       - gparted
       - gradio
       - hdparm
@@ -87,6 +88,7 @@
       - lsof
       - make
       - mkpasswd
+      - mosquitto
 #      - mplayer
       - mtools
       - mythes-de
@@ -116,6 +118,7 @@
       - pulseaudio-utils
       - python3-libselinux
       - python3-ansible-lint
+      - python3-dnf-plugin-versionlock
       - rdesktop
       - recode
       - remmina
