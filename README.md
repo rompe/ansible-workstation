@@ -17,13 +17,13 @@ ansible-pull -U https://github.com/gmanic/ansible-workstation nfs-server.yml
 The host name `localhost` is used per default. This only works if /etc/ansible/hosts ist left
 empty or features a `localhost` line.
 
-## To be configured manually, if needed
-* (Enable sshd.service - implemented)
+## To be configured manually, if needed - always copy files to destination in /etc to avoid selinux issues
 * Define automount map (stored offline)
-* Enable autofs.service (obviously, it is required with -33 to `setsebool -P nis_enabled 1` to enable rpcbind...
+* Enable autofs.service (obviously, it is required with -33 to `setsebool -P nis_enabled 1` to enable rpcbind and some more on -34...
 * Perhaps change codium's marketplace
-* Setup openvpn
-* Setup keybindings for desktop
+* Setup openvpn (use the offline encrypted tar I have, perhaps some selinux issues to clear)
+* Setup keybindings for desktop (hopefully someday with dconf reset/load from offline stored settings)
+* Setup all my terminal profiles for the different machines. ´dconf dump´ and ´dconf load´ to the rescue, very helpful; hint: "terminals" stored offline 
 * Setup virt-manager details
 * ...
 * install rpmfusion repos manually (dnf install....) for obs-studio
