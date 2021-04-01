@@ -28,7 +28,8 @@
       - calibre
       - cifs-utils
       - coreutils
-      - chromium-browser-privacy
+#      - chromium-browser-privacy
+# Part of rpmfusion
       - dbus-tools
       - dconf-editor
       - desktop-backgrounds-basic
@@ -147,8 +148,9 @@
       - telnet
       - testdisk
       - texlive
-      - thunderbird
-      - thunderbird-enigmail
+#      - thunderbird
+#      - thunderbird-enigmail
+# wayland got default, enigmail no longer avail
       - thunderbird-wayland
       - tmux
       - tmux-powerline
@@ -161,7 +163,8 @@
       - vim-enhanced
       - vim-powerline
       - vinagre
-      - vino
+#      - vino
+# not yet in 34
       - virt-manager
 #      - vlc
 #      - vlc-extras
