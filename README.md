@@ -22,7 +22,8 @@ empty or features a `localhost` line.
 * Enable autofs.service (obviously, it is required with -33 to `setsebool -P nis_enabled 1` to enable rpcbind and some more on -34...
 * Perhaps change codium's marketplace
 * Setup openvpn (use the offline encrypted tar I have, perhaps some selinux issues to clear)
-* Setup keybindings for desktop (hopefully someday with dconf reset/load from offline stored settings)
+  Reminder: use the configs and ´systemctl enable openvpn-client@<conf-name>.service´ + ´systemctl start ´ the service
+* Setup keybindings for desktop (hopefully someday with dconf reset/load from offline stored settings), like use alt-tab to switch through all single terminals instead of all at once...
 * Setup all my terminal profiles for the different machines. ´dconf dump´ and ´dconf load´ to the rescue, very helpful; hint: "terminals" stored offline 
 * Setup virt-manager details
 * ...
