@@ -30,21 +30,21 @@ empty or features a `localhost` line.
 * install rpmfusion repos manually (dnf install....) for obs-studio
 * compile and install v4l2loopback
   needed for chrome (-> Signal-flatpak) the following options are needed:
-  `modprobe v4l2loop devices=1 card_label="loopback 1" exclusive_caps=1,1,1,1,1,1,1,1`
+  * `modprobe v4l2loop devices=1 card_label="loopback 1" exclusive_caps=1,1,1,1,1,1,1,1`
 * example settings, as reminder: windows - unlock modal windows from parent, set proper startup programs
 * For now collecting some settings, will include in proper ansible-task later, I guess:
-  `gsettings set org.gnome.shell.window-switcher current-workspace-only false`
-  `gsettings set org.gnome.desktop.wm.keybindings switch-applications ['']`
-  `gsettings set org.gnome.desktop.wm.keybindings switch-windows ['<Alt>Tab']`
+  * `gsettings set org.gnome.shell.window-switcher current-workspace-only false`
+  * `gsettings set org.gnome.desktop.wm.keybindings switch-applications ['']`
+  * `gsettings set org.gnome.desktop.wm.keybindings switch-windows ['<Alt>Tab']`
 * Make some apps autostart at bootup:
-  `cp /usr/share/applications/com.nextcloud.desktopclient.nextcloud.desktop ~/.config/autostart`
-  `cp /usr/share/applications/firefox.desktop ~/.config/autostart`
-  `cp /usr/share/applications/io.github.Hexchat.desktop ~/.config/autostart`
-  `cp /usr/share/applications/mozilla-thunderbird-wayland.desktop ~/.config/autostart`
-  `cp /usr/share/applications/nautilus-autorun-software.desktop ~/.config/autostart`
-  `cp /usr/share/applications/org.gnome.Terminal.desktop ~/.config/autostart`
-  `cp /usr/share/applications/org.keepassxc.KeePassXC.desktop ~/.config/autostart`
-  `cp /usr/share/applications/org.signal.Signal.desktop ~/.config/autostart`
+  * `cp /usr/share/applications/com.nextcloud.desktopclient.nextcloud.desktop ~/.config/autostart`
+  * `cp /usr/share/applications/firefox.desktop ~/.config/autostart`
+  * `cp /usr/share/applications/io.github.Hexchat.desktop ~/.config/autostart`
+  * `cp /usr/share/applications/mozilla-thunderbird-wayland.desktop ~/.config/autostart`
+  * `cp /usr/share/applications/nautilus-autorun-software.desktop ~/.config/autostart`
+  * `cp /usr/share/applications/org.gnome.Terminal.desktop ~/.config/autostart`
+  * `cp /usr/share/applications/org.keepassxc.KeePassXC.desktop ~/.config/autostart`
+  * `cp /usr/share/applications/org.signal.Signal.desktop ~/.config/autostart`
 
 ## To be added manually
 
