@@ -33,9 +33,9 @@ empty or features a `localhost` line.
   `modprobe v4l2loop devices=1 card_label="loopback 1" exclusive_caps=1,1,1,1,1,1,1,1`
 * example settings, as reminder: windows - unlock modal windows from parent, set proper startup programs
 * For now collecting some settings, will include in proper ansible-task later, I guess:
-* ´gsettings set org.gnome.shell.window-switcher current-workspace-only false´
-* ´gsettings set org.gnome.desktop.wm.keybindings switch-applications ['']´
-* ´gsettings set org.gnome.desktop.wm.keybindings switch-windows ['<Alt>Tab']´
+* `gsettings set org.gnome.shell.window-switcher current-workspace-only false`
+* `gsettings set org.gnome.desktop.wm.keybindings switch-applications ['']`
+* `gsettings set org.gnome.desktop.wm.keybindings switch-windows ['<Alt>Tab']`
 
 ## To be added manually
 
