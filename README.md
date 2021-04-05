@@ -33,9 +33,10 @@ empty or features a `localhost` line.
   * `modprobe v4l2loop devices=1 card_label="loopback 1" exclusive_caps=1,1,1,1,1,1,1,1`
 * example settings, as reminder: windows - unlock modal windows from parent, set proper startup programs
 * For now collecting some settings, will include in proper ansible-task later, I guess:
-  * `gsettings set org.gnome.shell.window-switcher current-workspace-only false`
-  * `gsettings set org.gnome.desktop.wm.keybindings switch-applications ['']`
-  * `gsettings set org.gnome.desktop.wm.keybindings switch-windows ['<Alt>Tab']`
+  * `gsettings set org.gnome.shell.window-switcher current-workspace-only false` # enable window switching through all windows on all workspaces
+  * `gsettings set org.gnome.desktop.wm.keybindings switch-applications ['']` # remove application switching
+  * `gsettings set org.gnome.desktop.wm.keybindings switch-windows ['<Alt>Tab']` # instead do window switching with alt-tab
+  * `dconf write /org/gnome/desktop/input-sources/xkb-options "['grp_led:scroll']"` # enable window switch last (instead of changing keyboard with alt-shift)
 * Make some apps autostart at bootup:
   * `cp /usr/share/applications/com.nextcloud.desktopclient.nextcloud.desktop ~/.config/autostart`
   * `cp /usr/share/applications/firefox.desktop ~/.config/autostart`
