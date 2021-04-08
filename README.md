@@ -51,6 +51,10 @@ empty or features a `localhost` line.
 
 Some packages can't be installed using ansible.
 
+## See also, e.g. https://mutschler.eu/linux/install-guides/fedora-post-install/
+  * btrfs ssd optimization
+  * ...
+
 #### Eclipse
 I don't use Eclipse as of now, but Ulf put it in, so i left it for now.
 
