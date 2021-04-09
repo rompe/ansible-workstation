@@ -27,14 +27,15 @@ empty or features a `localhost` line.
 * Setup all my terminal profiles for the different machines. ´dconf dump´ and ´dconf load´ to the rescue, very helpful; hint: "terminals" stored offline
 * Setup virt-manager details
 * ...
-* install rpmfusion repos manually (dnf install....) for obs-studio
+* (done - install rpmfusion repos manually (dnf install....) for obs-studio
   * `dnf install -y  https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm`
   * `dnf install -y https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm`
   * then update the whole thing
   * `dnf upgrade --refresh`
   * `dnf groupupdate core`
   * `dnf install -y rpmfusion-free-release-tainted`
-  * `dnf install -y dnf-plugins-core`
+  * `dnf install -y dnf-plugins-core`)
+  Although an upgrade --refresh always makes sense :)
 * compile and install v4l2loopback
   needed for chrome (-> Signal-flatpak) the following options are needed:
   * `modprobe v4l2loop devices=1 card_label="loopback 1" exclusive_caps=1,1,1,1,1,1,1,1`
