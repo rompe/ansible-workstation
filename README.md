@@ -18,28 +18,36 @@ The host name `localhost` is used per default. This only works if /etc/ansible/h
 empty or features a `localhost` line.
 
 ## To be configured manually, if needed - always copy files to destination in /etc to avoid selinux issues
-* Define automount map (stored offline)
+* Define automount map (stored offline, Files extra.autofs and auto.nfs)
 * Enable autofs.service (obviously, it is required with -33 to `setsebool -P nis_enabled 1` to enable rpcbind and some more on -34...
 * Perhaps change codium's marketplace
 * Setup openvpn (use the offline encrypted tar I have, perhaps some selinux issues to clear)
   Reminder: use the configs and ´systemctl enable openvpn-client@<conf-name>.service´ + ´systemctl start ´ the service
-* Setup keybindings for desktop (hopefully someday with dconf reset/load from offline stored settings), like use alt-tab to switch through all single terminals instead of all at once...
-* Setup all my terminal profiles for the different machines. ´dconf dump´ and ´dconf load´ to the rescue, very helpful; hint: "terminals" stored offline 
+* Setup keybindings for desktop (hopefully someday with dconf reset/load from offline stored settings), like use alt-tab to switch through all single terminals instead of all at once... (see below)
+* Setup all my terminal profiles for the different machines. ´dconf dump´ and ´dconf load´ to the rescue, very helpful; hint: "terminals" stored offline
 * Setup virt-manager details
 * ...
 * install rpmfusion repos manually (dnf install....) for obs-studio
+  * `dnf install -y  https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm`
+  * `dnf install -y https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm`
+  * then update the whole thing
+  * `dnf upgrade --refresh`
+  * `dnf groupupdate core`
+  * `dnf install -y rpmfusion-free-release-tainted`
+  * `dnf install -y dnf-plugins-core`
 * compile and install v4l2loopback
   needed for chrome (-> Signal-flatpak) the following options are needed:
   * `modprobe v4l2loop devices=1 card_label="loopback 1" exclusive_caps=1,1,1,1,1,1,1,1`
-* example settings, as reminder: windows - unlock modal windows from parent, set proper startup programs
+* example settings, as reminder: windows - unlock modal windows from parent
+* nextcloud issue on icon status bar: delay startup with special desktop description file (stored offline)
 * For now collecting some settings, will include in proper ansible-task later, I guess:
   * `gsettings set org.gnome.shell.window-switcher current-workspace-only false` # enable window switching through all windows on all workspaces
   * `gsettings set org.gnome.desktop.wm.keybindings switch-applications ['']` # remove application switching
   * `gsettings set org.gnome.desktop.wm.keybindings switch-windows ['<Alt>Tab']` # instead do window switching with alt-tab
   * `dconf write /org/gnome/desktop/input-sources/xkb-options "['grp_led:scroll']"` # enable window switch last (instead of changing keyboard with alt-shift)
 * Make some apps autostart at bootup:
-  * `cp /usr/share/applications/com.nextcloud.desktopclient.nextcloud.desktop ~/.config/autostart`
-  * `cp /usr/share/applications/firefox.desktop ~/.config/autostart`
+  * use offline stored profile for nextcloud to delay startup com.nextcloud.desktopclient.nextcloud.desktop
+  * I don't start firefox automagically so I can open up keepass first. `rm ~/.config/autostart/firefox.desktop`
   * `cp /usr/share/applications/io.github.Hexchat.desktop ~/.config/autostart`
   * `cp /usr/share/applications/mozilla-thunderbird-wayland.desktop ~/.config/autostart`
   * `cp /usr/share/applications/nautilus-autorun-software.desktop ~/.config/autostart`
@@ -52,8 +60,8 @@ empty or features a `localhost` line.
 Some packages can't be installed using ansible.
 
 ## See also, e.g. https://mutschler.eu/linux/install-guides/fedora-post-install/
-  * btrfs ssd optimization
-  * ...
+  * btrfs ssd optimization in fstab:
+  * replace for / default with `ssd,noatime,space_cache,commit=120,compress=zstd,discard=async`
 
 #### Eclipse
 I don't use Eclipse as of now, but Ulf put it in, so i left it for now.
