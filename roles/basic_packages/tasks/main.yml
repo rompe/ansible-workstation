@@ -127,6 +127,7 @@
       - poppler-utils
       - powerline
       - powerline-fonts
+      - powertop
       - psmisc
       - pulseaudio-utils
       - python3-libselinux
