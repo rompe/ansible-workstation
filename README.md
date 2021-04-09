@@ -1,6 +1,6 @@
 # ansible-workstation
 Ansible playbook to update freshly installed Linux workstations for my needs - forked from Ulf's repo
-to adjust to my personal needs. 
+to adjust to my personal needs, copying some things I found all over the web.
 
 ## Usage
 
@@ -18,6 +18,7 @@ The host name `localhost` is used per default. This only works if /etc/ansible/h
 empty or features a `localhost` line.
 
 ## To be configured manually, if needed - always copy files to destination in /etc to avoid selinux issues
+* Set proper hostname with `hostnamectl set-hostname <machine-name>`
 * Define automount map (stored offline, Files extra.autofs and auto.nfs)
 * Enable autofs.service (obviously, it is required with -33 to `setsebool -P nis_enabled 1` to enable rpcbind and some more on -34...
 * Perhaps change codium's marketplace
@@ -60,7 +61,7 @@ empty or features a `localhost` line.
 
 Some packages can't be installed using ansible.
 
-## See also, e.g. https://mutschler.eu/linux/install-guides/fedora-post-install/
+See also, e.g. https://mutschler.eu/linux/install-guides/fedora-post-install/
   * btrfs ssd optimization in fstab:
   * replace for / default with `ssd,noatime,space_cache,commit=120,compress=zstd,discard=async`
 
