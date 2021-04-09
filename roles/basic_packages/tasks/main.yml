@@ -6,6 +6,7 @@
       - "@Fedora Workstation"
       - "@C Development Tools and Libraries"
 #      - "@GNOME Desktop Environment"
+      - "@3d-printing"
       - ImageMagick
       - alsa-utils
       - android-tools
