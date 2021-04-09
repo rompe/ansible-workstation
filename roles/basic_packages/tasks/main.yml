@@ -1,4 +1,13 @@
 ---
+- name: tweak dnf a little bit
+  lineinfile:
+    path: "/etc/dnf/dnf.conf"
+    line: "{{ item }}"
+  with_items:
+    - "fastestmirror=1"
+    - "max_parallel_downloads=10
+    - "deltarpm=true"
+
 - name: Install basic packages
   package:
     state: present
@@ -238,4 +247,16 @@
   dnf:
     name: 
       - dnf-plugins-core
-    state: present
+      - vlc
+      - libdvdcss
+      - gstreamer1-plugins-bad-free
+      - gstreamer1-plugins-bad-free-extra
+      - gstreamer1-plugins-freeworld
+      - gstreamer1-plugins-good
+      - gstreamer1-plugins-good-extra
+      - gstreamer1-plugins-good-gtk
+      - gstreamer1-plugins-ugly
+      - gstreamer1-plugins-ugly-free
+
+
+state: present
