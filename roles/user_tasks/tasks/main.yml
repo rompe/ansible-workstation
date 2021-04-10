@@ -11,6 +11,7 @@
     - "nautilus-autorun-software.desktop"
     - "org.gnome.Terminal.desktop"
     - "org.keepassxc.KeePassXC.desktop"
+    - "codium.desktop"
 
 - name: link flatpak autostart programs
   file:
