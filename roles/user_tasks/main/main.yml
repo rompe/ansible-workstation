@@ -2,13 +2,13 @@
 
 - name: link some autostart programs
   file:
-    src: "{{ item }}"
-    dest: "~/.config/autostart/"
+    src: "/usr/share/applications/{{ item }}"
+    dest: "~/.config/autostart/{{ item }}"
     state: link
   with_items:
-    - "/usr/share/applications/io.github.Hexchat.desktop"
-    - "/usr/share/applications/mozilla-thunderbird-wayland.desktop"
-    - "/usr/share/applications/nautilus-autorun-software.desktop"
-    - "/usr/share/applications/org.gnome.Terminal.desktop"
-    - "/usr/share/applications/org.keepassxc.KeePassXC.desktop"
-    - "/usr/share/applications/org.signal.Signal.desktop"
+    - "io.github.Hexchat.desktop"
+    - "mozilla-thunderbird-wayland.desktop"
+    - "nautilus-autorun-software.desktop"
+    - "org.gnome.Terminal.desktop"
+    - "org.keepassxc.KeePassXC.desktop"
+    - "org.signal.Signal.desktop"
