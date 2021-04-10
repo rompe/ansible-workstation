@@ -267,3 +267,48 @@
       - gstreamer1-plugin-openh264 
       - mozilla-openh264
     state: present
+
+- name: create power optimization
+  copy:
+    dest: "/etc/power_setup"
+    owner: "root"
+    mode: "u+rwx,go=r"
+    content: |
+      #!/bin/bash
+      echo '1500' > /proc/sys/vm/dirty_writeback_centisecs
+      echo '0' > /proc/sys/kernel/nmi_watchdog
+      echo 'auto' > /sys/bus/i2c/devices/i2c-12/device/power/control
+      echo 'auto' > /sys/bus/pci/devices/0000:00:12.0/power/control
+      echo 'auto' > /sys/bus/pci/devices/0000:00:04.0/power/control
+      echo 'auto' > /sys/bus/pci/devices/0000:00:1f.0/power/control
+      echo 'auto' > /sys/bus/pci/devices/0000:73:00.0/power/control
+      echo 'auto' > /sys/bus/pci/devices/0000:01:00.0/power/control
+      echo 'auto' > /sys/bus/pci/devices/0000:00:1f.5/power/control
+      echo 'auto' > /sys/bus/pci/devices/0000:00:00.0/power/control
+      echo 'auto' > /sys/bus/pci/devices/0000:00:14.2/power/control
+      echo 'auto' > /sys/bus/pci/devices/0000:72:00.0/power/control
+      echo 'auto' > /sys/bus/pci/devices/0000:00:14.2/power/control
+
+- name: create systemd file for power_setup
+  copy:
+    dest: "/lib/systemd/system/power_setup_startup.service"
+    owner: "root"
+    mode: "u+rw,go=r"
+    content: |
+      [Unit]
+      Description=A service to setup power saving features
+      After=network.target
+
+      [Service]
+      Type=simple
+      User=root
+      ExecStart=/etc/power_setup
+
+      [Install]
+      WantedBy=multi-user.target
+
+- name: enable systemd startup power_setup
+  systemd:
+    name: "power_setup_startup"
+    enabled: yes
+    state: started
