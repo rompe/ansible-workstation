@@ -5,7 +5,7 @@
     line: "{{ item }}"
   with_items:
     - "fastestmirror=1"
-    - "max_parallel_downloads=10
+    - "max_parallel_downloads=10"
     - "deltarpm=true"
 
 - name: Install basic packages
