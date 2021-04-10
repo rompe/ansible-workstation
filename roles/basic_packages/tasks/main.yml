@@ -270,7 +270,7 @@
 
 - name: link some autostart programs
   file:
-    src: {{ item }}
+    src: "{{ item }}"
     dest: "~/.config/autostart/"
     state: link
   with_items:
