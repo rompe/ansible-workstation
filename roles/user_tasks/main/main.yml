@@ -1,7 +1,7 @@
 ---
 # Tasks to be performed as calling user
 - name: link some autostart programs
-  file:
+  local_action: file:
     src: "/usr/share/applications/{{ item }}"
     dest: "~/.config/autostart/{{ item }}"
     state: link
@@ -12,8 +12,3 @@
     - "org.gnome.Terminal.desktop"
     - "org.keepassxc.KeePassXC.desktop"
     - "org.signal.Signal.desktop"
-
-- name: for testing only
-  debug:
-    msg:
-      - "test this"
