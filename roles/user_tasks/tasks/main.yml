@@ -11,4 +11,10 @@
     - "nautilus-autorun-software.desktop"
     - "org.gnome.Terminal.desktop"
     - "org.keepassxc.KeePassXC.desktop"
+
+- name: link flatpak autostart programs
+  file:
+    src: "/var/lib/flatpak/exports/share/applications/{{ item }}"
+    dest: "~/.config/autostart/{{ item }}"
+  with_items:
     - "org.signal.Signal.desktop"
