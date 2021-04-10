@@ -13,5 +13,7 @@
     - "org.keepassxc.KeePassXC.desktop"
     - "org.signal.Signal.desktop"
 
-- name: msg
-  debug: "test this"
+- name: for testing only
+  debug:
+    msg:
+      - "test this"
