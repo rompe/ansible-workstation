@@ -9,6 +9,7 @@
 
 # run the following as the calling user
 - hosts: localhost
+  connection: local
   become: false
   roles:
     - user_tasks
