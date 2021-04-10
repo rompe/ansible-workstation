@@ -16,5 +16,6 @@
   file:
     src: "/var/lib/flatpak/exports/share/applications/{{ item }}"
     dest: "~/.config/autostart/{{ item }}"
+    state: link
   with_items:
     - "org.signal.Signal.desktop"
