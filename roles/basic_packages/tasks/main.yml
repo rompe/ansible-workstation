@@ -77,7 +77,7 @@
       - glabels
       - glabels-templates
       - gnome-tweaks
-      - gnome-extension-app
+      - gnome-extensions-app
       - gparted
       - gradio
       - hdparm
