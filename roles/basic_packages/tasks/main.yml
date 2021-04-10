@@ -274,9 +274,9 @@
     dest: "~/.config/autostart/"
     state: link
   with_items:
-    - "/usr/share/applications/io.github.Hexchat.desktop" "~/.config/autostart"
-    - "/usr/share/applications/mozilla-thunderbird-wayland.desktop" "~/.config/autostart"
-    - "/usr/share/applications/nautilus-autorun-software.desktop" "~/.config/autostart"
-    - "/usr/share/applications/org.gnome.Terminal.desktop" "~/.config/autostart"
-    - "/usr/share/applications/org.keepassxc.KeePassXC.desktop" "~/.config/autostart"
-    - "/usr/share/applications/org.signal.Signal.desktop" "~/.config/autostart"
+    - "/usr/share/applications/io.github.Hexchat.desktop"
+    - "/usr/share/applications/mozilla-thunderbird-wayland.desktop"
+    - "/usr/share/applications/nautilus-autorun-software.desktop"
+    - "/usr/share/applications/org.gnome.Terminal.desktop"
+    - "/usr/share/applications/org.keepassxc.KeePassXC.desktop"
+    - "/usr/share/applications/org.signal.Signal.desktop"
