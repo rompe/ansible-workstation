@@ -267,16 +267,3 @@
       - gstreamer1-plugin-openh264 
       - mozilla-openh264
     state: present
-
-- name: link some autostart programs
-  file:
-    src: "{{ item }}"
-    dest: "~/.config/autostart/"
-    state: link
-  with_items:
-    - "/usr/share/applications/io.github.Hexchat.desktop"
-    - "/usr/share/applications/mozilla-thunderbird-wayland.desktop"
-    - "/usr/share/applications/nautilus-autorun-software.desktop"
-    - "/usr/share/applications/org.gnome.Terminal.desktop"
-    - "/usr/share/applications/org.keepassxc.KeePassXC.desktop"
-    - "/usr/share/applications/org.signal.Signal.desktop"

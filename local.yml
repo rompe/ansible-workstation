@@ -7,6 +7,9 @@
 #    - atom
 
 - hosts: localhost
+    - user_tasks
+
+- hosts: localhost
   become: false
   roles:
     - flathub
