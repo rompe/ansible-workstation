@@ -1,7 +1,7 @@
 ---
 # Tasks to be performed as calling user
 - name: link some autostart programs
-  local_action: file:
+  file:
     src: "/usr/share/applications/{{ item }}"
     dest: "~/.config/autostart/{{ item }}"
     state: link
