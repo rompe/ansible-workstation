@@ -20,6 +20,12 @@
       - alsa-utils
       - android-tools
       - ansible
+      - ansible-collection-ansible-netcommon
+      - ansible-collection-ansible-posix
+      - ansible-collection-community-general
+      - ansible-collection-community-kubernetes
+      - ansible-collection-community-mysql
+      - ansible-collection-containers-podman
       - ant
       - aspell
       - aspell-de
