@@ -319,3 +319,11 @@
     name: "power_setup_startup"
     enabled: yes
     state: started
+
+- name: pip install ansible
+  ansible.builtin.pip:
+    name: {{ item }}
+  with_itmes:
+    - "ansible==2.10.7"
+    - "ansible-base==2.10.7"
+    - "ansible-lint"
