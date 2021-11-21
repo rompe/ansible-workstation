@@ -138,6 +138,7 @@
       - pulseaudio-utils
       - python3-libselinux
       - python3-ansible-lint
+      - python3-netaddr
       - python3-dnf-plugin-versionlock
       - qelectrotech
       - rdesktop
