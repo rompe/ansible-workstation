@@ -55,6 +55,7 @@
       - diffutils
       - dmidecode
       - dnf-utils
+      - dnf-plugin-system-upgrade
       - docker
       - docker-compose
       - dos2unix
@@ -120,6 +121,7 @@
       - nmap
       - ntfsprogs
       - openssh
+      - openssl
       - openvpn
       - os-prober
       - p0f
