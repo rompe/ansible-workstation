@@ -76,6 +76,7 @@
       - findutils
       - firefox
       - flatpak
+      - fuse-sshfs
       - gconf-editor
       - gimp
       - gimp-help-de
